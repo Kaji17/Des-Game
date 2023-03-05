@@ -29,13 +29,13 @@
                     </span>
                     Rules
                 </button>
-                <button type="button" class="button dropdown">
+                <button type="button" class="button dropdown" onclick="addDice()" id="buttonAdd" >
                     <span class="material-symbols-outlined">
                         add_circle
                     </span>
                     Add dés
                 </button>
-                <button type="button" class="button dropdown ">
+                <button type="button" class="button dropdown " onclick="reset()">
                     <span class="material-symbols-outlined newGamme">
                         refresh
                     </span>
@@ -45,12 +45,18 @@
 
             <div class="rigth-content">
 
-                <div class="tableGame">
-                    <div class="dice dropdown d-1">6</div>
-                    <div class="dice dropdown d-2">6</div>
-                    <div class="dice dropdown d-3">6</div>
-                    <div class="dice dropdown d-4">6</div>
-                    <div class="dice dropdown d-5">6</div>
+                <div class="tableGame" id="dice-div">
+                    <div class="dice dropdown d-1" id="1">6</div>
+                    <div class="dice dropdown d-2" id="2">6</div>
+                    <div class="dice dropdown d-3" id="3">6</div>
+                    <div class="dice dropdown d-4" id="4">6</div>
+                    <div class="dice dropdown d-5" id="5">6</div>
+                </div>
+                <div class="empty" id="empty">
+                    <p>Ajouter un dé à la table de jeu</p>
+                    <span class="material-symbols-outlined">
+                        keyboard_backspace
+                    </span>
                 </div>
             </div>
         </main>
