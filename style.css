@@ -176,3 +176,39 @@ button:hover {
     }  
 
 }
+
+@media screen and (max-width :955px){
+    .content{
+        width: 80%;
+    }
+    .popup-content{
+        padding: 1rem;
+        font-size: 16px;
+    }
+
+}
+@media screen and (max-width :570px){
+    main{
+        width: 90%;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .left-content{
+        grid-row: 2;
+    }
+    .content{
+        height: 96vh;
+    }
+    .dice{
+        width: 60px;
+        height: 60px;
+    }
+    .button{
+        width: 200%;
+    }
+    .popup-content{
+        width: 70%;
+    }
+}
