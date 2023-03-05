@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Godé</title>
+</head>
+
+<body>
+
+    <div class="content">
+        <div class="title-score">
+            <div class="nameGame score">
+                <img src="assets/golden-3d-dice.png" alt="golden-3d-dice" class="des-img">
+                <h2>GODE GAME</h2>
+            </div>
+        </div>
+        <main>
+            <div class="left-content">
+                <button type="button" class="open-button dropdown" onclick="openForm()">
+                    <span class="material-symbols-outlined">
+                        description
+                    </span>
+                    Rules
+                </button>
+                <button type="button dropdown">
+                    <span class="material-symbols-outlined">
+                        add_circle
+                    </span>
+                    Add dés
+                </button>
+                <button type="button dropdown ">
+                    <span class="material-symbols-outlined newGamme">
+                        refresh
+                    </span>
+                    New Game
+                </button>
+            </div>
+
+            <div class="rigth-content">
+
+                <div class="tableGame">
+                    <div class="dice dropdown d-1">6</div>
+                    <div class="dice dropdown d-2">6</div>
+                    <div class="dice dropdown d-3">6</div>
+                    <div class="dice dropdown d-4">6</div>
+                    <div class="dice dropdown d-5">6</div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="form-popup" id="popupForm">
+        <div class="popup-content" >
+           <div class="titleRule">
+           <h1> RULES</h1>
+           </div>
+           <hr>
+           <div style="
+           display: flex;
+           flex-direction: column;
+           text-align: left;">
+            <p>
+                <span class="circle-yellow">1</span> Ajouter des dés au plateau en vous servant du bouton `Add des`
+               </p>
+               <p>
+                <span class="circle-yellow">2</span> Le maximun de dés sur le plateau est de 05
+               </p>
+               <p>
+                <span class="circle-yellow">3</span> Pour lancer la partie il vous suffit de cliquer sur un dé du plateau
+               </p>
+               <p>
+                Amusez vous bien :)
+               </p>
+           </div>
+           <hr>
+           <button type="button" onclick="closeForm()">OK</button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
