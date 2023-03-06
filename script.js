@@ -23,8 +23,7 @@ function closeForm() {
 
 //Fonction servant à ouvrir le alert de score 
 function openFormScore() {
-    document.getElementById("popupScore-content").style.animationDelay= "1s"; 
-    document.getElementById("popupScore-content").style.display = "flex";
+    document.getElementById("popupScore").style.display = "flex";
 }
 
 //Fonction servant à quitter le alert de score 
