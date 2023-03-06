@@ -61,7 +61,7 @@
             </div>
         </main>
     </div>
-    <div class="form-popup" id="popupForm">
+    <div class="form-popup f" id="popupForm">
         <div class="popup-content" >
            <div class="titleRule">
            <h1> RULES</h1>
@@ -81,11 +81,36 @@
                 <span class="circle-yellow">3</span> Pour lancer la partie il vous suffit de cliquer sur un dé du plateau
                </p>
                <p>
+                <span class="circle-yellow">4</span> Une fois le score dévoiler il est obligatoire de lancer une nouvelle partie
+               </p>
+               <p>
                 Amusez vous bien :)
                </p>
            </div>
            <hr>
            <button type="button" onclick="closeForm()" >OK</button>
+        </div>
+    </div>
+
+    <div class="form-popup" id="popupScore">
+        <div class="popup-content" id="popupScore-content">
+           <div class="titleRule">
+           <h3> SCORE</h3>
+           </div>
+           <hr>
+           <div style="
+           display: flex;
+           flex-direction: column;
+           text-align: left;" id="affichescore">
+            SCORE: 00
+           </div>
+           <hr>
+           <div style="
+           display: flex;
+           justify-content: center;
+           ">
+                <button type="button" onclick=" reset()" >NEW GAME</button>
+            </div>
         </div>
     </div>
 

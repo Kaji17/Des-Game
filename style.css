@@ -125,6 +125,10 @@ button:hover {
     color: black;
     display: none;
     cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bolder;
 }
 
 .empty{
@@ -152,6 +156,16 @@ button:hover {
     justify-content: center;
    
 }
+#popupScore{
+    top: 25%;
+    height: 150%;
+}
+#popupScore-content{
+    padding: 1rem;
+    width: 46%;
+    height: 15%;
+    display: none;
+}
 
 .popup-content {
     background-color: #121212;
@@ -177,12 +191,23 @@ button:hover {
     from{
         border-radius: 100%;
         transform: scale(0);
+        de
     }
     to{
         border-radius: 0%;
         transform: scale(1);
     }  
+}
 
+@keyframes secouement {
+    from{
+        border-radius: 100%;
+        transform: scale(0);
+    }
+    to{
+        border-radius: 0%;
+        transform: scale(1);
+    }  
 }
 
 @media screen and (max-width :955px){
