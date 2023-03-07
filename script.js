@@ -32,7 +32,7 @@ function closeFormScore() {
 }
 
 // quitter le pop-pup lors d'un click hors du pop-pup
-window.onclick = function (event) {
+window.onclick = function(event) {
     if (event.target.className === "form-popup f") {
         event.target.style.display = "none";
     }
@@ -43,44 +43,44 @@ window.addEventListener("load", (event) => {
     openForm();
     reset();
     endGame = true;
-  });
+});
 
 
 
 // fonction permettant d'ajouter un dé au tableau
-function addDice(){
+function addDice() {
     if (endGame) {
-        if (compteDice<5) {
-            compteDice = compteDice+1;  
+        if (compteDice < 5) {
+            compteDice = compteDice + 1;
             console.log(compteDice);
             document.getElementById(`${compteDice}`).style.display = "flex";
             document.getElementById("empty").style.display = "none";
-           
-        }else{
+
+        } else {
             alert("Nombre de Dés max!!")
         }
-    }else{
+    } else {
         openFormScore();
     }
-    
+
 }
 
 // Remise à zéro du jeu
-function reset(){
+function reset() {
     for (let i = 1; i < 6; i++) {
         document.getElementById(`${i}`).style.display = "none";
         document.getElementById("empty").style.display = "block";
         compteDice = 0;
-        score= 0;
+        score = 0;
         document.getElementById(`${i}`).innerText = 6;
-        endGame= true;
+        endGame = true;
         closeFormScore();
 
     }
 }
 
 //Fonction permettant de générer une nombre aléatoire entre 1 et 6
-function getNumber(min, max){
+function getNumber(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
 }
 
@@ -88,17 +88,16 @@ function getNumber(min, max){
 deSelect.forEach(element => {
     element.addEventListener('click', () => {
         if (endGame) {
-            for (let i = 1; i < compteDice+1; i++) {
+            for (let i = 1; i < compteDice + 1; i++) {
                 let nbre = getNumber(1, 6)
-                // Affiche le nombre générer dans le décorespondant
+                    // Affiche le nombre générer dans le décorespondant
                 document.getElementById(`${i}`).innerText = nbre
                 score = score + nbre;
-                document.getElementById("affichescore").innerText= "SCORE: "+score;
+                document.getElementById("affichescore").innerText = "SCORE: " + score;
                 endGame = false;
                 openFormScore();
+
             }
-        } else {
-            openFormScore();
-        }
+        } else {}
     })
 });

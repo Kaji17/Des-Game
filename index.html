@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="favicon.png">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>Godé</title>
 </head>
 
@@ -29,7 +28,7 @@
                     </span>
                     Rules
                 </button>
-                <button type="button" class="button dropdown" onclick="addDice()" id="buttonAdd" >
+                <button type="button" class="button dropdown" onclick="addDice()" id="buttonAdd">
                     <span class="material-symbols-outlined">
                         add_circle
                     </span>
@@ -62,54 +61,54 @@
         </main>
     </div>
     <div class="form-popup f" id="popupForm">
-        <div class="popup-content" >
-           <div class="titleRule">
-           <h1> RULES</h1>
-           </div>
-           <hr>
-           <div style="
+        <div class="popup-content">
+            <div class="titleRule">
+                <h1> RULES</h1>
+            </div>
+            <hr>
+            <div style="
            display: flex;
            flex-direction: column;
            text-align: left;">
-            <p>
-                <span class="circle-yellow">1</span> Ajouter des dés au plateau en vous servant du bouton `Add des`
-               </p>
-               <p>
-                <span class="circle-yellow">2</span> Le maximun de dés sur le plateau est de 05
-               </p>
-               <p>
-                <span class="circle-yellow">3</span> Pour lancer la partie il vous suffit de cliquer sur un dé du plateau
-               </p>
-               <p>
-                <span class="circle-yellow">4</span> Une fois le score dévoiler il est obligatoire de lancer une nouvelle partie
-               </p>
-               <p>
-                Amusez vous bien :)
-               </p>
-           </div>
-           <hr>
-           <button type="button" onclick="closeForm()" >OK</button>
+                <p>
+                    <span class="circle-yellow">1</span> Ajouter des dés au plateau en vous servant du bouton `Add des`
+                </p>
+                <p>
+                    <span class="circle-yellow">2</span> Le maximun de dés sur le plateau est de 05
+                </p>
+                <p>
+                    <span class="circle-yellow">3</span> Pour lancer la partie il vous suffit de cliquer sur un dé du plateau
+                </p>
+                <p>
+                    <span class="circle-yellow">4</span> Une fois le score dévoiler il est obligatoire de lancer une nouvelle partie
+                </p>
+                <p>
+                    Amusez vous bien :)
+                </p>
+            </div>
+            <hr>
+            <button type="button" onclick="closeForm()">OK</button>
         </div>
     </div>
 
     <div class="form-popup" id="popupScore">
         <div class="popup-content" id="popupScore-content">
-           <div class="titleRule">
-           <h3> SCORE</h3>
-           </div>
-           <hr>
-           <div style="
+            <div class="titleRule">
+                <h3> SCORE</h3>
+            </div>
+            <hr>
+            <div style="
            display: flex;
            flex-direction: column;
            text-align: left;" id="affichescore">
-            SCORE: 00
-           </div>
-           <hr>
-           <div style="
+                SCORE: 00
+            </div>
+            <hr>
+            <div style="
            display: flex;
            justify-content: center;
            ">
-                <button type="button" onclick=" reset()" >NEW GAME</button>
+                <button type="button" onclick=" reset()">NEW GAME</button>
             </div>
         </div>
     </div>
